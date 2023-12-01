@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_slide_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:text=" Name:"
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/update_s_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rs_student_bg"
+                android:ems="10"
+                android:fontFamily="@font/righteous"
+                android:hint="Student's Full Name"
+                android:inputType="text"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate_grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_slide_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:text=" Institute: "
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/update_s_institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rs_student_bg"
+                android:ems="10"
+                android:fontFamily="@font/righteous"
+                android:hint="School/College Name"
+                android:inputType="text"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate_grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_slide_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:text=" Class: "
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/update_s_class"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rs_student_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_slide_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:text=" Fee: "
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/update_s_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rs_student_bg"
+                android:ems="10"
+                android:fontFamily="@font/righteous"
+                android:hint="In Rupees"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate_grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_slide_bg"
+                android:fontFamily="@font/righteous"
+                android:padding="7dp"
+                android:text=" Contact: "
+                android:textColor="@color/cream"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/update_s_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rs_student_bg"
+                android:ems="10"
+                android:fontFamily="@font/righteous"
+                android:hint="999 666 4545"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/slate_grey"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/card_bg"
+                android:backgroundTint="@color/black"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="@color/greenish"
+                    android:fontFamily="@font/righteous"
+                    android:text="Update"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

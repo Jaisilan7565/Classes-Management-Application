@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Students.AddStudents"
+    android:background="@drawable/student_bg">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/yankees_blue"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/light_brown"
+            android:fontFamily="@font/righteous"
+            android:gravity="center"
+            android:text="Admission"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Name:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_s_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Student's Full Name"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:background="@drawable/rs_student_bg"
+                android:padding="7dp"
+                android:textColorHint="@color/slate_grey"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Institute: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_s_institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="School/College Name"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:background="@drawable/rs_student_bg"
+                android:padding="7dp"
+                android:textColorHint="@color/slate_grey"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Class: "
+                android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/add_s_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rs_student_bg"
+                    android:fontFamily="@font/righteous"
+                    android:padding="7dp"
+                    android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Fee: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_s_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="In Rupees"
+                android:maxLength="5"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:background="@drawable/rs_student_bg"
+                android:padding="7dp"
+                android:textColorHint="@color/slate_grey"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Contact: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/add_s_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="999 666 4545"
+                android:maxLength="10"
+                android:background="@drawable/rs_student_bg"
+                android:padding="7dp"
+                android:textColorHint="@color/slate_grey"
+                android:textColor="@color/black"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous"
+                android:background="@drawable/left_slide_bg"
+                android:padding="7dp"
+                android:textColor="@color/cream"
+                android:text=" Joining Date: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/add_s_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Admmision Date"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:background="@drawable/rs_student_bg"
+                android:padding="7dp"
+                android:textColorHint="@color/slate_grey"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ls_button_bg"
+                android:backgroundTint="@color/black"
+                android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/discard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ls_button_bg"
+                android:backgroundTint="@color/magic_red"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="Discard" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/rs_button_bg"
+                android:backgroundTint="@color/black"
+                android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rs_button_bg"
+                android:backgroundTint="@color/greenish"
+                android:fontFamily="@font/righteous"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="SUBMIT" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

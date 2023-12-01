@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:theme="@style/login_style"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:elevation="6dp"
+        android:background="@drawable/white_background"
+        android:backgroundTint="@color/peach"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/reg_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_background"
+            android:elevation="5dp"
+            android:padding="15dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="6dp"
+            android:elevation="6dp"
+            android:ems="10"
+            android:fontFamily="@font/medium_italic_jost"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="6dp"
+            android:elevation="6dp"
+            android:ems="10"
+            android:fontFamily="@font/medium_italic_jost"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/reg_confirm_pass"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="6dp"
+            android:elevation="6dp"
+            android:ems="10"
+            android:fontFamily="@font/medium_italic_jost"
+            android:hint="Confirm Password"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/aleo"
+            android:text="Register"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_tab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/login_rs_bg"
+        android:backgroundTint="@color/light_black"
+        android:backgroundTintMode="screen"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:drawablePadding="5dp"
+        android:elevation="7dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@color/prussian_blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/registration_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

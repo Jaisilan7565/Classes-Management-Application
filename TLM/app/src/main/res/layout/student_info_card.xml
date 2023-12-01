@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dash_card_bg"
+        android:backgroundTint="@color/light_brown"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/s_card_name"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/card_text_bg"
+                    android:backgroundTint="@color/light_black"
+                    android:fontFamily="@font/extra_bold_jost"
+                    android:text="ShinChan Hiroshi Nohara"
+                    android:maxLines="1"
+                    android:textColor="@color/cream"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/s_card_delete_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/delete_icon"
+                    android:backgroundTint="@color/magic_red" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/righteous"
+                        android:background="@drawable/mini_btn_bg"
+                        android:backgroundTint="@color/moss_green"
+                        android:textColor="@color/cream"
+                        android:text=" Institute "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/s_card_institute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginLeft="5dp"
+                        android:text="School/College Name"
+                        android:fontFamily="@font/righteous"
+                        android:textSize="16sp"
+                        android:textColor="@color/slate_grey"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/righteous"
+                        android:background="@drawable/mini_btn_bg"
+                        android:backgroundTint="@color/moss_green"
+                        android:textColor="@color/cream"
+                        android:text=" Class "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/s_card_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:layout_marginLeft="5dp"
+                        android:text="TY BSC IT"
+                        android:fontFamily="@font/righteous"
+                        android:textSize="16sp"
+                        android:textColor="@color/slate_grey"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/righteous"
+                        android:background="@drawable/mini_btn_bg"
+                        android:backgroundTint="@color/moss_green"
+                        android:textColor="@color/cream"
+                        android:text=" Fee "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/s_card_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="99999"
+                        android:fontFamily="@font/righteous"
+                        android:textSize="16sp"
+                        android:textColor="@color/slate_grey"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/righteous"
+                            android:background="@drawable/mini_btn_bg"
+                            android:backgroundTint="@color/moss_green"
+                            android:textColor="@color/cream"
+                            android:text=" Contact "
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/s_card_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0123456789"
+                            android:fontFamily="@font/righteous"
+                            android:textSize="16sp"
+                            android:textColor="@color/slate_grey"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/righteous"
+                        android:background="@drawable/mini_btn_bg"
+                        android:backgroundTint="@color/moss_green"
+                        android:textColor="@color/cream"
+                        android:text=" Joining Date "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/s_card_j_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 / 1 / 2023"
+                        android:fontFamily="@font/righteous"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16sp"
+                        android:textColor="@color/slate_grey"/>
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/phone_call_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/magic_red"
+                            android:drawableLeft="@drawable/phone_call"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/righteous"
+                            android:textSize="20sp"
+                            android:text="Call" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/due_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/mango_yellow"
+                        android:fontFamily="@font/righteous"
+                        android:textSize="20sp"
+                        android:drawableLeft="@drawable/due_icon"
+                        android:layout_weight="1"
+                        android:text="Due" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/whatsapp_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/greenish"
+                            android:fontFamily="@font/righteous"
+                            android:textSize="20sp"
+                            android:drawableLeft="@drawable/whatsapp"
+                            android:layout_weight="1"
+                            android:text="WhatsApp" />
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
