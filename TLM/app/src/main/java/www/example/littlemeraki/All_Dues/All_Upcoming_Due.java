@@ -75,6 +75,10 @@ public class All_Upcoming_Due extends Fragment {
 
                             String currentDate = sdf.format(new Date());
 
+                            String[] DDparts= due_date.split("/");
+                            String DD_month = DDparts[1].trim();
+                            int Dmonth = Integer.parseInt(DD_month);
+
                             String[] CDparts = currentDate.split(" / ");
                             String CD_date = CDparts[0].trim();
                             String CD_month = CDparts[1].trim();
@@ -92,8 +96,8 @@ public class All_Upcoming_Due extends Fragment {
                             } catch (ParseException e) {
                                 throw new RuntimeException(e);
                             }
-                            if (System.currentTimeMillis() < (strDate.getTime() + (1000 * 60 * 60 * 24))
-                                    && !FcurrentDate.equals(due_date)) {
+                            if ((System.currentTimeMillis() < (strDate.getTime() + (1000 * 60 * 60 * 24))
+                                    && !FcurrentDate.equals(due_date)) && month == Dmonth) {
                                 studentsDataList.add(new StudentInfo_Model(name, course, due_date, contact));
                             }
 

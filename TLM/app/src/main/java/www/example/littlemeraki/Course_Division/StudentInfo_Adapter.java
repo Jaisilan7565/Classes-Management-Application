@@ -101,7 +101,7 @@ public class StudentInfo_Adapter extends FirebaseRecyclerAdapter<StudentInfo_Mod
         holder.whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://api.whatsapp.com/send?phone=" + holder.contact.getText().toString();
+                String url = "https://api.whatsapp.com/send?phone=" + "91" + holder.contact.getText().toString();  // Indian Country code is used..
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));
                 s_context.startActivity(intent);

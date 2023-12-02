@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911882899413",
+    "project_id": "the-little-meraki",
+    "storage_bucket": "the-little-meraki.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911882899413:android:5151518ce02428ad15375c",
+        "android_client_info": {
+          "package_name": "www.example.littlemeraki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7l24EyVs8jcDIyRaxSkQcsmkLb8wrapE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
