@@ -48,7 +48,6 @@ public class Student_Info extends AppCompatActivity {
 
     NetworkChangeListener networkChangeListener=new NetworkChangeListener();
     String course_key, userEmail;
-    TextView course_title;
     RecyclerView recview;
     LottieAnimationView no_data;
     List<String> itemList;

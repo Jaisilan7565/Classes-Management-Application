@@ -29,6 +29,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Dashboard.All_Students"
+            android:exported="false" />
+        <activity
             android:name=".All_Dues.Custom_Due_Message"
             android:exported="false" />
         <activity

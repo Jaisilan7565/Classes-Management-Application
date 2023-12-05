@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -54,6 +55,7 @@ public class Dashboard extends AppCompatActivity {
 
     RecyclerView dash_recview;
     DashAdapter adapter;
+    CardView all_students;
     TextView total_students, total_revenue, noti_history;
     String userEmail;
     List<String> itemList;
@@ -71,6 +73,7 @@ public class Dashboard extends AppCompatActivity {
         total_students = findViewById(R.id.total_students);
         total_revenue = findViewById(R.id.total_revenu);
         noti_history = findViewById(R.id.notification_history);
+        all_students=findViewById(R.id.all_students);
 
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
@@ -156,6 +159,14 @@ public class Dashboard extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        all_students.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent all_students = new Intent(Dashboard.this, All_Students.class);
+                startActivity(all_students);
             }
         });
 

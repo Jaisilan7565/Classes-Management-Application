@@ -118,13 +118,6 @@ public class Due_Dates_Adapter extends RecyclerView.Adapter<Due_Dates_Adapter.Vi
 
                     }
                 });
-//                String phoneNumber = "1234567890"; // Replace with the recipient's phone number
-//                String message = "Hello, WhatsApp!"; // Replace with your message
-//                String url = "https://wa.me/" + phoneNumber + "?text=" + Uri.encode(message);
-//
-//                Intent intent = new Intent(Intent.ACTION_VIEW);
-//                intent.setData(Uri.parse(url));
-//                startActivity(intent);
             }
         });
 
